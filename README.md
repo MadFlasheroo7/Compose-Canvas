@@ -23,48 +23,56 @@ app logo credits to [Yogi Aprelliyanto](https://thenounproject.com/icon/canvas-5
 |               1                |                2                |
 |:------------------------------:|:-------------------------------:|
 | ![](./screenshots/drawArc.png) | ![](./screenshots/drawArc2.png) |
+
 [Learn More](https://blog.realogs.in/graphics-in-jetpack-compose/#draw-arc)
 
 ## Draw Circle
 |                 1                 |                 2                  |
 |:---------------------------------:|:----------------------------------:|
 | ![](./screenshots/drawCircle.png) | ![](./screenshots/drawCircle2.png) |
+
 [Learn More](https://blog.realogs.in/graphics-in-jetpack-compose/#draw-circle)
 
 ## Draw Line
 |                1                |                2                 |
 |:-------------------------------:|:--------------------------------:|
 | ![](./screenshots/drawLine.png) | ![](./screenshots/drawLine2.png) |
+
 [Learn More](https://blog.realogs.in/graphics-in-jetpack-compose/#draw-line)
 
 ## Draw Oval
 |                1                |                2                 |
 |:-------------------------------:|:--------------------------------:|
 | ![](./screenshots/drawOval.png) | ![](./screenshots/drawOval2.png) |
+
 [Learn More](https://blog.realogs.in/graphics-in-jetpack-compose/#draw-circle)
 
 ## Draw Path
 |                1                |
 |:-------------------------------:|
 | ![](./screenshots/drawPath.png) |
+
 [Learn More](https://blog.realogs.in/graphics-in-jetpack-compose/#draw-path-draw-point)
 
 ## Draw Points
 |                 1                 |                 2                  |
 |:---------------------------------:|:----------------------------------:|
 | ![](./screenshots/drawPoints.png) | ![](./screenshots/drawPoints2.png) |
+
 [Learn More](https://blog.realogs.in/graphics-in-jetpack-compose/#draw-path-draw-point)
 
 ## Draw Rect
 |                1                |                2                 |
 |:-------------------------------:|:--------------------------------:|
 | ![](./screenshots/drawRect.png) | ![](./screenshots/drawRect2.png) |
+
 [Learn More](https://blog.realogs.in/graphics-in-jetpack-compose/#draw-rect)
 
 ## Draw Rounded Rect
 |                   1                    |                    2                    |
 |:--------------------------------------:|:---------------------------------------:|
 | ![](./screenshots/drawRoundedRect.png) | ![](./screenshots/drawRoundedRect2.png) |
+
 [Learn More](https://blog.realogs.in/graphics-in-jetpack-compose/#draw-rect)
 
 # Conclusion
