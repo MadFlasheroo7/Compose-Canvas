@@ -74,7 +74,3 @@ app logo credits to [Yogi Aprelliyanto](https://thenounproject.com/icon/canvas-5
 | ![](./screenshots/drawRoundedRect.png) | ![](./screenshots/drawRoundedRect2.png) |
 
 [Learn More](https://blog.realogs.in/graphics-in-jetpack-compose/#draw-rect)
-
-# Conclusion
-Do check out the blog and source code and drop any issue you found either here on my social 
-media dms [here](https://linktr.ee/mad_flasher) :) and as always have a good day
