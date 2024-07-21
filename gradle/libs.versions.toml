@@ -1,6 +1,50 @@
 [versions]
+application-id = "pro.jayeshseth.composecanvas"
+compose-bom = "2024.06.00"
+commonModule = "0.0.2"
+namespace = "pro.jayeshseth.composecanvas"
+kotlin = "2.0.0"
+androidx-test-ext-junit = "1.1.5"
+junit = "4.13.2"
+androidGradlePlugin = "8.5.1"
+composeNavigation = "2.8.0-alpha08"
+serialization = "1.6.3"
 
 [libraries]
+# Common Module
+commonmodule = { module = "pro.jayeshseth.madappmodules:commonModules", version.ref = "commonModule" }
+
+# Compose
+compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "compose-bom" }
+compose-ui = { group = "androidx.compose.ui", name = "ui" }
+compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+compose-ui-util = { group = "androidx.compose.ui", name = "ui-util" }
+compose-ui-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+compose-material3 = { group = "androidx.compose.material3", name = "material3" }
+
+
+# Navigation
+navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "composeNavigation" }
+
+# Kotlin
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "serialization" }
+
+# [Test Dependencies]
+# Android Tests
+android-test-compose-ui-test = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-test-ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidx-test-ext-junit" }
+
+# Unit Tests
+junit = { group = "junit", name = "junit", version.ref = "junit" }
 
 [plugins]
+android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
+android-library = { id = "com.android.library", version.ref = "androidGradlePlugin" }
+android-test = { id = "com.android.test", version.ref = "androidGradlePlugin" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 
+[bundles]
