@@ -1,6 +1,7 @@
 package xyz.jayeshseth.canvasexample
 
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
@@ -8,11 +9,12 @@ import xyz.jayeshseth.canvasexample.CanvasScreen
 import xyz.jayeshseth.canvasexample.canvas.*
 
 @Composable
-fun NavGraph() {
+fun NavGraph(modifier: Modifier = Modifier) {
     val navController = rememberNavController()
     NavHost(
         navController = navController,
-        startDestination = "CANVAS_SCREEN"
+        startDestination = "CANVAS_SCREEN",
+        modifier = modifier
     ) {
         composable("CANVAS_SCREEN") {
             CanvasScreen(

@@ -31,7 +31,8 @@ fun DrawPoints() {
             .verticalScroll(
                 state = rememberScrollState(),
             )
-            .padding(bottom = 40.dp),
+            .padding(bottom = 40.dp)
+            .navigationBarsPadding(),
         horizontalAlignment = Alignment.CenterHorizontally,
     ) {
         Text(

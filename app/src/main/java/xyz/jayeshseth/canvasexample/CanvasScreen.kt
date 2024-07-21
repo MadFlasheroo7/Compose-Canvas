@@ -1,7 +1,9 @@
 package xyz.jayeshseth.canvasexample
 
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -26,11 +28,11 @@ fun CanvasScreen(
     navigateToDrawPath: () -> Unit,
 ) {
     val btnHeight = 50.dp
-    val navController = rememberNavController()
     Column(
         modifier = Modifier
-            .fillMaxSize()
-            .padding(horizontal = 24.dp),
+//            .fillMaxSize()
+            .padding(horizontal = 24.dp)
+            .systemBarsPadding(),
         verticalArrangement = Arrangement.SpaceEvenly,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
@@ -44,71 +46,77 @@ fun CanvasScreen(
                     )
                 )
             },
-            modifier = Modifier.windowInsetsPadding(WindowInsets(0.dp)),
         )
-        Button(
-            onClick = navigateToDrawRect,
+        Column(
+            verticalArrangement = Arrangement.spacedBy(25.dp),
             modifier = Modifier
-                .height(btnHeight)
-                .fillMaxWidth()
+                .padding(top = 12.dp)
+                .verticalScroll(rememberScrollState())
         ) {
-            Text(text = "drawRect")
-        }
-        Button(
-            onClick = navigateToDrawLine,
-            modifier = Modifier
-                .height(btnHeight)
-                .fillMaxWidth()
-        ) {
-            Text(text = "drawLine")
-        }
-        Button(
-            onClick = navigateToDrawRoundedRect,
-            modifier = Modifier
-                .height(btnHeight)
-                .fillMaxWidth()
-        ) {
-            Text(text = "drawRoundedRect")
-        }
-        Button(
-            onClick = navigateToDrawCircle,
-            modifier = Modifier
-                .height(btnHeight)
-                .fillMaxWidth()
-        ) {
-            Text(text = "drawCircle")
-        }
-        Button(
-            onClick = navigateToDrawOval,
-            modifier = Modifier
-                .height(btnHeight)
-                .fillMaxWidth()
-        ) {
-            Text(text = "drawOval")
-        }
-        Button(
-            onClick = navigateToDrawArc,
-            modifier = Modifier
-                .height(btnHeight)
-                .fillMaxWidth()
-        ) {
-            Text(text = "drawArc")
-        }
-        Button(
-            onClick = navigateToDrawPoints,
-            modifier = Modifier
-                .height(btnHeight)
-                .fillMaxWidth()
-        ) {
-            Text(text = "drawPoints")
-        }
-        Button(
-            onClick = navigateToDrawPath,
-            modifier = Modifier
-                .height(btnHeight)
-                .fillMaxWidth()
-        ) {
-            Text(text = "drawPath")
+            Button(
+                onClick = navigateToDrawRect,
+                modifier = Modifier
+                    .height(btnHeight)
+                    .fillMaxWidth()
+            ) {
+                Text(text = "drawRect")
+            }
+            Button(
+                onClick = navigateToDrawLine,
+                modifier = Modifier
+                    .height(btnHeight)
+                    .fillMaxWidth()
+            ) {
+                Text(text = "drawLine")
+            }
+            Button(
+                onClick = navigateToDrawRoundedRect,
+                modifier = Modifier
+                    .height(btnHeight)
+                    .fillMaxWidth()
+            ) {
+                Text(text = "drawRoundedRect")
+            }
+            Button(
+                onClick = navigateToDrawCircle,
+                modifier = Modifier
+                    .height(btnHeight)
+                    .fillMaxWidth()
+            ) {
+                Text(text = "drawCircle")
+            }
+            Button(
+                onClick = navigateToDrawOval,
+                modifier = Modifier
+                    .height(btnHeight)
+                    .fillMaxWidth()
+            ) {
+                Text(text = "drawOval")
+            }
+            Button(
+                onClick = navigateToDrawArc,
+                modifier = Modifier
+                    .height(btnHeight)
+                    .fillMaxWidth()
+            ) {
+                Text(text = "drawArc")
+            }
+            Button(
+                onClick = navigateToDrawPoints,
+                modifier = Modifier
+                    .height(btnHeight)
+                    .fillMaxWidth()
+            ) {
+                Text(text = "drawPoints")
+            }
+            Button(
+                onClick = navigateToDrawPath,
+                modifier = Modifier
+                    .height(btnHeight)
+                    .fillMaxWidth()
+            ) {
+                Text(text = "drawPath")
+            }
         }
     }
 }

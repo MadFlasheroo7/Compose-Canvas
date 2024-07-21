@@ -25,23 +25,9 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    NavGraph()
-
+                    NavGraph(modifier = Modifier)
                 }
             }
         }
-    }
-}
-
-@Composable
-fun Greeting(name: String) {
-    Text(text = "Hello $name!",modifier = Modifier.systemBarsPadding())
-}
-
-@Preview(showBackground = true)
-@Composable
-fun DefaultPreview() {
-    CanvasExampleTheme {
-        Greeting("Android")
     }
 }

@@ -36,7 +36,8 @@ fun DrawArc() {
             .verticalScroll(
                 state = rememberScrollState(),
             )
-            .padding(bottom = 20.dp),
+            .padding(bottom = 20.dp)
+            .navigationBarsPadding(),
         horizontalAlignment = Alignment.CenterHorizontally,
     ) {
         Text(
